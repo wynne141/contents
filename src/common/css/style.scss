@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+// .................... //
+
+// mixin //
+
+// .................... //
+
+
+//フォントサイズの指定 (default: 14px)
+@mixin font($fs:14,$fw:400) {
+	font-size: $fs + px;
+	font-size: $fs * 0.1 +rem;
+	font-weight: $fw;
+}
+
+//リンクのカラー指定
+@mixin link-color($color:#333) {
+	color: $color;
+	transition: .4s;
+
+	&:hover, &:active, &:focus {
+		color: lighten($color, 20%);
+		transition: .4s;
+	}
+}
+
+
+// .................... //
+
+// Reset SCSS Setting //
+
+// .................... //
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+	list-style: none;
+    vertical-align:baseline;
+    background:transparent;
+	background-repeat: no-repeat;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+nav, ul, li {
+    list-style:none;
+}
+
+a {
+	@include link-color;
+	text-decoration: none;
+}
+
+
+
+// .................... //
+
+// common //
+
+// .................... //
+
+html, body {
+	@include font();
+}
