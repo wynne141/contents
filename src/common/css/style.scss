@@ -10,9 +10,10 @@
 //フォントサイズの指定 (default: 14px)
 @mixin font($fs:14,$fw:400) {
 	font-size: $fs + px;
-	font-size: $fs * 0.1 +rem;
+	font-size: $fs * 0.1 + rem;
 	font-weight: $fw;
 }
+
 
 //リンクのカラー指定
 @mixin link-color($color:#333) {
@@ -75,13 +76,12 @@ a {
 }
 
 
-
 // .................... //
 
 // common //
 
 // .................... //
 
-html, body {
+html {
 	@include font();
 }

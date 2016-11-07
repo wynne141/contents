@@ -1,7 +1,6 @@
 
 
 
-
 <!doctype html>
 <html lang="ja">
 <head>
@@ -11,12 +10,29 @@
 <link rel="shortcut icon" type="image/svg+xml" sizes="any" href="icon/favicon.svg" />
 <link rel="apple-touch-icon" href="icon/favicon.svg">
 <link rel="stylesheet" media="all" type="text/css" href="common/css/style.css">
+<link rel="stylesheet" media="all" type="text/css" href="common/css/svg.css">
 <title></title>
 </head>
 
 <body>
 
+<svg id="include-svg">
 
+	<symbol id="mail" viewBox="0 0 24 24">
+		<path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+	</symbol>
+
+</svg>
+
+
+<div id="wrap">
+
+
+<ul>
+	<li><svg><use xlink:href="#mail"/></svg><span>テキスト</span></li>
+</ul>
+
+</div><!--wrap-->
 
 <footer>
 </footer>

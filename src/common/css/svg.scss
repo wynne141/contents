@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// .................... //
+
+// SVG common //
+
+// .................... //
+
+#include-svg {
+	display: none; //読み出し部分
+}
+
+svg {
+	display: inline-block;
+	width: 1.0em;
+	height: 1.0em;
+
+	margin: 0;
+	padding: 0;
+	vertical-align: text-bottom;
+}
