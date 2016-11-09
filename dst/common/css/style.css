@@ -46,9 +46,3 @@ a:hover, a:active, a:focus {
   -webkit-transition: .4s;
   transition: .4s;
 }
-
-html {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
